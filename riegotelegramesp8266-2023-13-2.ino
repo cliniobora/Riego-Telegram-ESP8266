@@ -206,7 +206,7 @@ void loop() {
 
   if (millis() - bot_lasttime > BOT_MTBS) {
     int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-    //bot.sendMessage("5923727182", "te amo bb sos mi cielito y mi verde");
+    
     while (numNewMessages) {
       Serial.println("got response");
       handleNewMessages(numNewMessages);
